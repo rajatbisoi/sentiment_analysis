@@ -1,0 +1,20 @@
+base:
+  project: sentiment-analysis-project
+  random_state: 22
+  target_col: output
+
+data_source:
+  batch_files: Training_raw
+
+data_prepration:
+  training_db: sentiment_analysis_db
+  training_collection_bad: bad_training_validated
+  training_collection_good: good_training_validated 
+  schema_training: schema_training
+
+pred_data_prepration:
+  prediction_db: sentiment_analysis_db
+  prediction_collection_bad: bad_training_validated
+  prediction_collection_good: good_training_validated 
+  schema_prediction: schema_prediction
+  
